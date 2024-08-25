@@ -8,7 +8,7 @@ export async function getNowPlayingMovies() {
     const response = await axios.get(
       `${URL}movie/now_playing?api_key=${API_KEY}`
     );
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching movie data:", error);
@@ -113,7 +113,7 @@ export async function searchForMovie(query) {
 
 // getRecommendedMovies(293660);
 
-getNowPlayingMovies();
+// getNowPlayingMovies();
 
 // getMovieTrailer(628962);
 
@@ -122,3 +122,5 @@ getNowPlayingMovies();
 // getNowPlayingMovies();
 
 // searchForMovie("dead");
+
+// getMovieDetails(1225588)

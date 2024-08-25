@@ -47,7 +47,7 @@ const MoviePage = () => {
 
   const movie = movieDetails;
 
-  if (movieDetails.length == 0 || movieCastList.length == 0) {
+  if (movieDetails.length == 0) {
     return <LoadingPage />;
   }
 
@@ -112,16 +112,16 @@ const MoviePage = () => {
       </div>
 
       <div className="container mx-auto bg-center my-9 2xl:container md:container lg:container">
-        <h1 className="">CAST</h1>
+        <h1 className="mx-auto mt-8 text-3xl ">Cast</h1>
         {/* {console.log(movieCastList)} */}
         <MovieCastGrid movieCastList={movieCastList} />
       </div>
       <div className="container mx-auto bg-center 2xl:container md:container lg:container my-9">
-        {/* {console.log(trailerList)} */}
+      <h1 className="mx-auto mt-8 text-3xl">Movie Trailer</h1>
         <MovieTrailer videoList={videoList} />
       </div>
       <div className="container mx-auto bg-center 2xl:container md:container lg:container my-9">
-        <h1>SIMILAR MOVIES</h1>
+        <h1 className="mx-auto mt-8 text-3xl">Similar Movies</h1>
         {/* {console.log(recommendedMovieList)} */}
         <SimilarMoviesGrid recommendedMovieList={recommendedMovieList} />
       </div>
