@@ -1,8 +1,17 @@
-# React + Vite
+# MOVIE SEARCHER WEB APP (AKA PLAYBACK)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> The goal is to create a movie wishlister where a user can cretae a user, login add movies to wish list and share the wishlist to family and friends, more features coming soon...
 
-Currently, two official plugins are available:
+Tools and technology used for project development:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS [VITE](https://vitejs.dev/)
+- [TMDB API](https://developer.themoviedb.org/docs/getting-started)
+- [Netlify](https://www.netlify.com/) (for frontend deployment)
+- [Tailwindcss](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+
+## Setup
+
+Site is already hosted, no need to setup
+[click here](https://playback-app.netlify.app) to visit the site
+

@@ -8,7 +8,7 @@ export async function getNowPlayingMovies() {
     `${URL}movie/now_playing?api_key=${API_KEY}`
   );
   try {
-    // console.log(response.data);
+    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error(error);
@@ -111,7 +111,7 @@ export async function searchForMovie(query) {
 
 // getRecommendedMovies(293660);
 
-// getNowPlayingMovies();
+getNowPlayingMovies();
 
 // getMovieTrailer(628962);
 
