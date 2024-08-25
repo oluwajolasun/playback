@@ -48,9 +48,8 @@ const HomePage = () => {
     popularMovieList.length == 0 ||
     upcomingMovieList.length == 0 ||
     topRatedMovieList.length == 0
-  ) {
-    <LoadingPage />;
-  }
+  )
+    return <LoadingPage />;
 
   return (
     <div className="text-white">
