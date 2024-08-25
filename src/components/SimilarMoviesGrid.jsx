@@ -9,7 +9,7 @@ const SimilarMoviesGrid = (props) => {
         ? "This movie does not have similar movies"
         : movies.map((movie) => (
             <div key={movie.id} className="text-center w-36">
-              <Link to={`/movies/${movie.id}`} reloadDocument={true}>
+              <Link to={`/movies/${movie.id}`}>
                 <div>
                   <img
                     src={
