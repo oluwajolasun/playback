@@ -4,7 +4,7 @@ const Carousel = (props) => {
   const movies = props.nowPlayingMovieList;
   return (
     <div className="mx-auto text-white 3xl:container ">
-      console.log(movie)
+      {console.log(movies)}
       <div className="flex w-full overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
         {movies.map((movie, index) => (
           <div key={index} className="w-full carousel-item ">
