@@ -45,16 +45,12 @@ const HomePage = () => {
     };
   }, []);
 
-  if (
-    nowPlayingMovieList.length == 0 ||
+  return nowPlayingMovieList.length == 0 ||
     popularMovieList.length == 0 ||
     upcomingMovieList.length == 0 ||
-    topRatedMovieList.length == 0
-  ) {
-    return <LoadingPage />;
-  }
-
-  return (
+    topRatedMovieList.length == 0 ? (
+    <LoadingPage />
+  ) : (
     <div className="text-white">
       <Carousel nowPlayingMovieList={nowPlayingMovieList} />
       <h1 className="container mx-auto mt-8 text-3xl">Popular Movies</h1>
