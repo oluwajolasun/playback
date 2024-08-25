@@ -37,12 +37,10 @@ const HomePage = () => {
       setTopRatedMovieList(response.results.slice(0, 16));
     };
 
-    return () => {
-      fetchNowPlayingMovies();
-      fetchPopularMovies();
-      fetchUpcomingMovies();
-      fetchTopRatedMovies();
-    };
+    fetchNowPlayingMovies();
+    fetchPopularMovies();
+    fetchUpcomingMovies();
+    fetchTopRatedMovies();
   }, []);
 
   // nowPlayingMovieList.length == 0 ||
@@ -50,7 +48,7 @@ const HomePage = () => {
   //   upcomingMovieList.length == 0 ||
   //   topRatedMovieList.length == 0 ? (
   //   <LoadingPage />
-  // ) : 
+  // ) :
 
   return (
     <div className="text-white">

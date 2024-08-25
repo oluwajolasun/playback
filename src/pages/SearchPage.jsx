@@ -13,9 +13,7 @@ const SearchPage = () => {
       setSearchedList(response.results);
     };
 
-    return () => {
-      fetchSearchedMovies();
-    };
+    fetchSearchedMovies();
   }, [query]);
 
   const handleSearch = (e) => {
@@ -58,12 +56,8 @@ const SearchPage = () => {
                     />
                     <div className="">
                       <p className="font-bold text-md">{movie.title}</p>
-                      <p className="text-sm ">
-                        {movie.release_date}
-                      </p>
-                      <p className="text-sm ">
-                        {movie.vote_average}
-                      </p>
+                      <p className="text-sm ">{movie.release_date}</p>
+                      <p className="text-sm ">{movie.vote_average}</p>
                     </div>
                   </div>
                 </div>

@@ -39,12 +39,10 @@ const MoviePage = () => {
       setVideoList(response.data.results);
     };
 
-    return () => {
-      fetchMovieDetails();
-      fetchMovieCast();
-      fetchSimilarMovies();
-      fetchMovieTrailer();
-    };
+    fetchMovieDetails();
+    fetchMovieCast();
+    fetchSimilarMovies();
+    fetchMovieTrailer();
   }, [movie_id]);
 
   const movie = movieDetails;
