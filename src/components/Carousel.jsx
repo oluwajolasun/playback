@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Carousel = (props) => {
   const movies = props.nowPlayingMovieList;
@@ -24,9 +25,9 @@ const Carousel = (props) => {
                     <p>#{index + 1} Spotlight</p>
                     <h1 className="text-5xl font-bold">{movie.title}</h1>
                     <p className="my-3 line-clamp-2">{movie.overview}</p>
-                    <a href={`/movies/${movie.id}`}>
+                    <Link to={`/movies/${movie.id}`}>
                       <button className="btn glass">Movie Details</button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
