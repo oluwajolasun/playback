@@ -8,7 +8,7 @@ import {
   getTopRatedMovies,
   getUpcomingMovies,
 } from "../api";
-// import LoadingPage from "./LoadingPage";
+import LoadingPage from "./LoadingPage";
 
 const HomePage = () => {
   const [nowPlayingMovieList, setNowPlayingMovieList] = useState([]);
@@ -43,12 +43,14 @@ const HomePage = () => {
     fetchTopRatedMovies();
   }, []);
 
-  // nowPlayingMovieList.length == 0 ||
-  //   popularMovieList.length == 0 ||
-  //   upcomingMovieList.length == 0 ||
-  //   topRatedMovieList.length == 0 ? (
-  //   <LoadingPage />
-  // ) :
+  if (
+    nowPlayingMovieList.length == 0 ||
+    popularMovieList.length == 0 ||
+    upcomingMovieList.length == 0 ||
+    topRatedMovieList.length == 0
+  ) {
+    <LoadingPage />;
+  }
 
   return (
     <div className="text-white">
