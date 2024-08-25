@@ -12,5 +12,5 @@ const MovieGrid = ({ children }) => {
 export default MovieGrid;
 
 MovieGrid.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
 };

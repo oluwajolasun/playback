@@ -53,7 +53,6 @@ const HomePage = () => {
 
   return (
     <div className="text-white">
-      {console.log(nowPlayingMovieList)}
       <Carousel nowPlayingMovieList={nowPlayingMovieList} />
       <h1 className="container mx-auto mt-8 text-3xl">Popular Movies</h1>
       <MovieGrid>
