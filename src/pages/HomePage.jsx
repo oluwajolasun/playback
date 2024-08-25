@@ -8,7 +8,7 @@ import {
   getTopRatedMovies,
   getUpcomingMovies,
 } from "../api";
-import LoadingPage from "./LoadingPage";
+// import LoadingPage from "./LoadingPage";
 
 const HomePage = () => {
   const [nowPlayingMovieList, setNowPlayingMovieList] = useState([]);

@@ -13,7 +13,7 @@ const SimilarMoviesGrid = (props) => {
                   <img
                     src={
                       movie.poster_path == null
-                        ? "/src/assets/placeholder-image.jpg"
+                        ? "/public/placeholder-image.jpg"
                         : `https://image.tmdb.org/t/p/original/${movie.poster_path}`
                     }
                     alt=""

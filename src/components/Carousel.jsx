@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 
 const Carousel = (props) => {
-  const movie = props.nowPlayingMovieList;
+  const movies = props.nowPlayingMovieList;
   return (
     <div className="mx-auto text-white 3xl:container ">
+      console.log(movie)
       <div className="flex w-full overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
-        {movie.map((movie, index) => (
+        {movies.map((movie, index) => (
           <div key={index} className="w-full carousel-item ">
             <div
               className="h-screen md:h-[80vh] lg:h-[60vh] object-cover w-screen bg-center"
