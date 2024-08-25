@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const SimilarMoviesGrid = (props) => {
   const movies = props.recommendedMovieList;
@@ -8,7 +9,7 @@ const SimilarMoviesGrid = (props) => {
         ? "This movie does not have similar movies"
         : movies.map((movie) => (
             <div key={movie.id} className="text-center w-36">
-              <a href={`/movies/${movie.id}`}>
+              <Link to={`/movies/${movie.id}`}>
                 <div>
                   <img
                     src={
@@ -21,7 +22,7 @@ const SimilarMoviesGrid = (props) => {
                   />
                   <div>{movie.title}</div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
     </div>

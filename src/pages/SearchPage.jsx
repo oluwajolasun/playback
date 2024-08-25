@@ -46,18 +46,20 @@ const SearchPage = () => {
                 <div className="px-3 py-4 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
                   <div className="w-full">
                     <img
-                      className="object-cover h-96"
-                      src={
-                        movie.poster_path == null
-                          ? "/public/placeholder-image.jpg"
-                          : `https://image.tmdb.org/t/p/original/${movie.poster_path}`
-                      }
+                      className="object-cover min-w-8/12"
+                      src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
                       alt="movie poster"
                     />
-                    <div className="">
-                      <p className="font-bold text-md">{movie.title}</p>
-                      <p className="text-sm ">{movie.release_date}</p>
-                      <p className="text-sm ">{movie.vote_average}</p>
+                    <div>
+                      <p className="font-bold text-center text-md line-clamp-1">
+                        {movie.title}
+                      </p>
+                      <p className="text-sm text-center ">
+                        {movie.release_date}
+                      </p>
+                      <p className="text-sm text-center ">
+                        {movie.vote_average.toFixed(2)}
+                      </p>
                     </div>
                   </div>
                 </div>
